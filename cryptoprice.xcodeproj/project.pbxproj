@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D68720D201A56F100F0D95E /* PreferencesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D68720C201A56F100F0D95E /* PreferencesTableViewController.m */; };
+		3D6DD62A20390D950020AD74 /* MainSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6DD62920390D950020AD74 /* MainSettingsTableViewController.m */; };
+		3D6DF5C1201EAA6E00DFECC9 /* TimezoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6DF5C0201EAA6E00DFECC9 /* TimezoneTableViewController.m */; };
+		3D71A18B202693730039BFD1 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D71A18A202693730039BFD1 /* SettingsTableViewController.m */; };
+		3DABC59B203D01B300A7CC0F /* MainScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DABC59A203D01B300A7CC0F /* MainScrollViewController.m */; };
+		3DC1E4B420303FBA00B54D3D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC1E4B320303FBA00B54D3D /* CustomTableViewCell.m */; };
 		3DCC974A201697C700146697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCC9749201697C700146697 /* AppDelegate.m */; };
-		3DCC974D201697C700146697 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCC974C201697C700146697 /* FirstViewController.m */; };
-		3DCC9750201697C700146697 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCC974F201697C700146697 /* SecondViewController.m */; };
 		3DCC9753201697C700146697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCC9751201697C700146697 /* Main.storyboard */; };
 		3DCC9755201697C700146697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DCC9754201697C700146697 /* Assets.xcassets */; };
 		3DCC9758201697C700146697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DCC9756201697C700146697 /* LaunchScreen.storyboard */; };
 		3DCC975B201697C700146697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCC975A201697C700146697 /* main.m */; };
 		3DCC9765201697C700146697 /* cryptopriceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCC9764201697C700146697 /* cryptopriceTests.m */; };
 		3DCC9770201697C700146697 /* cryptopriceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCC976F201697C700146697 /* cryptopriceUITests.m */; };
+		3DDD3396203B9CC30060468E /* CryptoSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD3395203B9CC30060468E /* CryptoSubView.m */; };
+		3DDD3398203B9CD80060468E /* CryptoSubView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDD3397203B9CD80060468E /* CryptoSubView.xib */; };
+		3DDD339C203BAAA30060468E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD339A203BAAA30060468E /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +43,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D68720B201A56F100F0D95E /* PreferencesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreferencesTableViewController.h; sourceTree = "<group>"; };
+		3D68720C201A56F100F0D95E /* PreferencesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreferencesTableViewController.m; sourceTree = "<group>"; };
+		3D6DD62820390D950020AD74 /* MainSettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSettingsTableViewController.h; sourceTree = "<group>"; };
+		3D6DD62920390D950020AD74 /* MainSettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSettingsTableViewController.m; sourceTree = "<group>"; };
+		3D6DF5BF201EAA6E00DFECC9 /* TimezoneTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimezoneTableViewController.h; sourceTree = "<group>"; };
+		3D6DF5C0201EAA6E00DFECC9 /* TimezoneTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimezoneTableViewController.m; sourceTree = "<group>"; };
+		3D71A189202693730039BFD1 /* SettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		3D71A18A202693730039BFD1 /* SettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		3DABC599203D01B300A7CC0F /* MainScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScrollViewController.h; sourceTree = "<group>"; };
+		3DABC59A203D01B300A7CC0F /* MainScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainScrollViewController.m; sourceTree = "<group>"; };
+		3DC1E4B220303FBA00B54D3D /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		3DC1E4B320303FBA00B54D3D /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		3DCC9745201697C700146697 /* cryptoprice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cryptoprice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCC9748201697C700146697 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3DCC9749201697C700146697 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3DCC974B201697C700146697 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		3DCC974C201697C700146697 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		3DCC974E201697C700146697 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		3DCC974F201697C700146697 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		3DCC9752201697C700146697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3DCC9754201697C700146697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DCC9754201697C700146697 /* Assets.xcassets */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DCC9757201697C700146697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DCC9759201697C700146697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DCC975A201697C700146697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +69,11 @@
 		3DCC976B201697C700146697 /* cryptopriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cryptopriceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCC976F201697C700146697 /* cryptopriceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cryptopriceUITests.m; sourceTree = "<group>"; };
 		3DCC9771201697C700146697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDD3394203B9CC30060468E /* CryptoSubView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoSubView.h; sourceTree = "<group>"; };
+		3DDD3395203B9CC30060468E /* CryptoSubView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoSubView.m; sourceTree = "<group>"; };
+		3DDD3397203B9CD80060468E /* CryptoSubView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoSubView.xib; sourceTree = "<group>"; };
+		3DDD3399203BAAA30060468E /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		3DDD339A203BAAA30060468E /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +101,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D729DB8203D20F3001CF95A /* CryptoSubView */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD3394203B9CC30060468E /* CryptoSubView.h */,
+				3DDD3395203B9CC30060468E /* CryptoSubView.m */,
+				3DDD3397203B9CD80060468E /* CryptoSubView.xib */,
+			);
+			path = CryptoSubView;
+			sourceTree = "<group>";
+		};
+		3DADC1592038B6AB00EFDB3C /* Settings Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D68720B201A56F100F0D95E /* PreferencesTableViewController.h */,
+				3D68720C201A56F100F0D95E /* PreferencesTableViewController.m */,
+				3D6DF5BF201EAA6E00DFECC9 /* TimezoneTableViewController.h */,
+				3D6DF5C0201EAA6E00DFECC9 /* TimezoneTableViewController.m */,
+				3DC1E4B220303FBA00B54D3D /* CustomTableViewCell.h */,
+				3DC1E4B320303FBA00B54D3D /* CustomTableViewCell.m */,
+			);
+			path = "Settings Files";
+			sourceTree = "<group>";
+		};
 		3DCC973C201697C700146697 = {
 			isa = PBXGroup;
 			children = (
@@ -106,11 +149,16 @@
 			children = (
 				3DCC9748201697C700146697 /* AppDelegate.h */,
 				3DCC9749201697C700146697 /* AppDelegate.m */,
-				3DCC974B201697C700146697 /* FirstViewController.h */,
-				3DCC974C201697C700146697 /* FirstViewController.m */,
-				3DCC974E201697C700146697 /* SecondViewController.h */,
-				3DCC974F201697C700146697 /* SecondViewController.m */,
+				3DDD3399203BAAA30060468E /* MainViewController.h */,
+				3DDD339A203BAAA30060468E /* MainViewController.m */,
+				3DABC599203D01B300A7CC0F /* MainScrollViewController.h */,
+				3DABC59A203D01B300A7CC0F /* MainScrollViewController.m */,
+				3D729DB8203D20F3001CF95A /* CryptoSubView */,
+				3DDD3393203B9C460060468E /* MainSettingsTableViewController  */,
 				3DCC9751201697C700146697 /* Main.storyboard */,
+				3D71A189202693730039BFD1 /* SettingsTableViewController.h */,
+				3D71A18A202693730039BFD1 /* SettingsTableViewController.m */,
+				3DADC1592038B6AB00EFDB3C /* Settings Files */,
 				3DCC9754201697C700146697 /* Assets.xcassets */,
 				3DCC9756201697C700146697 /* LaunchScreen.storyboard */,
 				3DCC9759201697C700146697 /* Info.plist */,
@@ -135,6 +183,15 @@
 				3DCC9771201697C700146697 /* Info.plist */,
 			);
 			path = cryptopriceUITests;
+			sourceTree = "<group>";
+		};
+		3DDD3393203B9C460060468E /* MainSettingsTableViewController  */ = {
+			isa = PBXGroup;
+			children = (
+				3D6DD62820390D950020AD74 /* MainSettingsTableViewController.h */,
+				3D6DD62920390D950020AD74 /* MainSettingsTableViewController.m */,
+			);
+			path = "MainSettingsTableViewController ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +302,7 @@
 			files = (
 				3DCC9758201697C700146697 /* LaunchScreen.storyboard in Resources */,
 				3DCC9755201697C700146697 /* Assets.xcassets in Resources */,
+				3DDD3398203B9CD80060468E /* CryptoSubView.xib in Resources */,
 				3DCC9753201697C700146697 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,10 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DCC9750201697C700146697 /* SecondViewController.m in Sources */,
+				3D71A18B202693730039BFD1 /* SettingsTableViewController.m in Sources */,
+				3DABC59B203D01B300A7CC0F /* MainScrollViewController.m in Sources */,
 				3DCC974A201697C700146697 /* AppDelegate.m in Sources */,
 				3DCC975B201697C700146697 /* main.m in Sources */,
-				3DCC974D201697C700146697 /* FirstViewController.m in Sources */,
+				3DDD339C203BAAA30060468E /* MainViewController.m in Sources */,
+				3D68720D201A56F100F0D95E /* PreferencesTableViewController.m in Sources */,
+				3D6DF5C1201EAA6E00DFECC9 /* TimezoneTableViewController.m in Sources */,
+				3D6DD62A20390D950020AD74 /* MainSettingsTableViewController.m in Sources */,
+				3DDD3396203B9CC30060468E /* CryptoSubView.m in Sources */,
+				3DC1E4B420303FBA00B54D3D /* CustomTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -425,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

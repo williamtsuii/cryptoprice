@@ -1,4 +1,4 @@
-//
+    //
 //  AppDelegate.h
 //  cryptoprice
 //
@@ -11,7 +11,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UITabBarController *tabBarController; 
 
+extern NSString *kSettingsCurrency;
+extern NSString *kSettingsTimezone;
 
 @end
 

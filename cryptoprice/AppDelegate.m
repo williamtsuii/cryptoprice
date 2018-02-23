@@ -14,9 +14,21 @@
 
 @implementation AppDelegate
 
+@synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
+
+
+NSString *kSettingsCurrency = @"currency";
+NSString *kSettingsTimezone = @"timezone";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //UIStoryboard *currencyStoryboard = [UIStoryboard storyboardWithName:@"currency" bundle:nil];
+    //UIViewController *currencyViewController = [currencyStoryboard instantiateInitialViewController];
+    
+    //currencyViewController.title = NSLocalizedString(@"Currency", @"Currency");
+    //currencyViewController.tabBarItem.image = TODO    
+    
     return YES;
 }
 
@@ -46,6 +58,5 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 @end
