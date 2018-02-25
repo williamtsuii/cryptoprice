@@ -11,6 +11,12 @@
 @interface CryptoSubView : UIView
 
 -(void)initHelper;
+@property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UILabel *cryptoName;
+@property (weak, nonatomic) IBOutlet UILabel *cryptoPrice;
+@property (weak, nonatomic) IBOutlet UILabel *cryptoLastUpdate;
+@property (weak, nonatomic) IBOutlet UILabel *cryptoChange;
+
 - (void)setProperties:(NSString*)name
              forPrice:(NSString*)price
         forLastUpdate:(NSString*)last

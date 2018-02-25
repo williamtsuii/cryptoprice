@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Prices-->
         <scene sceneID="SQC-LE-yQ8">
             <objects>
-                <navigationController id="frJ-Tf-RSd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Rp3-Py-KJe"/>
+                <navigationController title="Prices" id="frJ-Tf-RSd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Prices" id="Rp3-Py-KJe"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kAs-Tx-zTv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -125,7 +125,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I7R-7R-6lV" id="pU9-PR-yLt">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ACM-D1-dgg">
@@ -163,7 +163,7 @@
                                         <rect key="frame" x="0.0" y="115" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="78M-Rq-xcZ" id="fpq-Ws-ldl">
-                                            <rect key="frame" x="0.0" y="0.0" width="341" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vvR-9V-oq7">
@@ -237,11 +237,11 @@
             </objects>
             <point key="canvasLocation" x="1963.75" y="60.029999999999994"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="hEp-aL-rEc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZKT-WD-ILm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nTr-PN-sgw"/>
+                <navigationController title="Settings" automaticallyAdjustsScrollViewInsets="NO" id="ZKT-WD-ILm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="nTr-PN-sgw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FOX-v2-mel">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

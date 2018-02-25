@@ -8,17 +8,6 @@
 
 #import "CryptoSubView.h"
 
-@interface CryptoSubView ()
-
-@property (strong, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UILabel *cryptoName;
-@property (weak, nonatomic) IBOutlet UILabel *cryptoPrice;
-@property (weak, nonatomic) IBOutlet UILabel *cryptoLastUpdate;
-@property (weak, nonatomic) IBOutlet UILabel *cryptoChange;
-
-@end
-
-
 @implementation CryptoSubView
 
 -(instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -48,7 +37,6 @@
 
 
 //This method changes the [cryptoTitle] to the name of the cryptocurrency name
-
 - (void)setProperties:(NSString*)name forPrice:(NSString*)price forLastUpdate:(NSString*)last forChange:(NSString *)change
 {
     self.cryptoName.text = name;

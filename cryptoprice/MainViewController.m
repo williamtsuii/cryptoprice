@@ -28,9 +28,7 @@
     //Setting cryptoSubView Properties:
     self.cryptoSubViewWidth = 375;
     self.cryptoSubViewHeight = 235;
-    // --------- END ----------//
  
-
     self.view = [[UIView alloc] init];
     UIView *gvcView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.view = gvcView;
@@ -72,12 +70,8 @@
         }
         [self getData];
         [refreshControl endRefreshing];
-        NSLog(@"Refresh end");
         [self.scrollView addSubview:refreshControl];
-
     });
-    
-    
 }
 
 
@@ -86,17 +80,7 @@
     NSString *currencyPref = [[NSUserDefaults standardUserDefaults] stringForKey:@"currencyPref"];;
     NSArray *tokenArray = [[NSUserDefaults standardUserDefaults] arrayForKey:@"SEL_CRYPTOS"];
     NSInteger selectedCryptoCount = tokenArray.count;
-    
-    if (selectedCryptoCount <= 3) {
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width,
-                                                 (4*self.cryptoSubViewHeight));
-    } else {
-        //Sets height for UIScrollView (varies with # of cryptoprices being displayed)
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width,
-                                                 (selectedCryptoCount*self.cryptoSubViewHeight));
-    }
-   
-    
+
     for (int i = 0; i < selectedCryptoCount; i++) {
         NSString *currentCrypto = tokenArray[i];
         NSInteger firstNumber = (currentCrypto.length - 4);
@@ -139,7 +123,15 @@
             });
         }];
         [downloadTask resume];
-     
+    }
+    
+    if (self.scrollView.subviews.count <= 3) {
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width,
+                                                 (3*self.cryptoSubViewHeight+50));
+    } else {
+        //Sets height for UIScrollView (varies with # of cryptoprices being displayed)
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width,
+                                                 (selectedCryptoCount*self.cryptoSubViewHeight));
     }
 }
 
