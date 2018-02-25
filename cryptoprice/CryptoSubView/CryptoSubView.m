@@ -26,7 +26,7 @@
     return self;
 }
 
--(void)initHelper {
+-(void)initHelper:(NSString *)crypto {
     //Custom initalization
     [[NSBundle mainBundle] loadNibNamed:@"CryptoSubView" owner:self options:nil];
     

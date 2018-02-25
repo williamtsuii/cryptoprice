@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *cryptoPrice;
 @property (weak, nonatomic) IBOutlet UILabel *cryptoLastUpdate;
 @property (weak, nonatomic) IBOutlet UILabel *cryptoChange;
+@property (weak, nonatomic) IBOutlet UILabel *historicalPrice;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *historicalBar;
 
 - (void)setProperties:(NSString*)name
              forPrice:(NSString*)price
