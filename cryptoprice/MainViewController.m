@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
     //Setting cryptoSubView Properties:
-    self.cryptoSubViewWidth = 375;
+    //self.cryptoSubViewWidth = 375;
     self.cryptoSubViewHeight = 245;
  
     self.view = [[UIView alloc] init];

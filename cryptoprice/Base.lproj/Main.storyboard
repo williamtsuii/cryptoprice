@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +43,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r07-Zz-VUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554.375" y="-509.14333333333332"/>
+            <point key="canvasLocation" x="887" y="-458.00000000000006"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="z2Q-LB-ejL">
@@ -52,12 +53,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="Asm-QC-SjX" customClass="MainScrollViewController">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Asm-QC-SjX" customClass="MainScrollViewController">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="hxB-65-KHF"/>
                     </view>
                     <navigationItem key="navigationItem" id="xRv-Fw-66u">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="WDb-RE-Y2q">
@@ -66,7 +68,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
-                                    <segue destination="Mgi-Nq-Sd6" kind="push" id="ZyR-Sf-86J"/>
+                                    <segue destination="Mgi-Nq-Sd6" kind="show" id="ZyR-Sf-86J"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -79,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBv-Hs-65O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058.5" y="-617.5"/>
+            <point key="canvasLocation" x="1693.6000000000001" y="-555.47226386806608"/>
         </scene>
         <!--Main Settings Table View Controller-->
         <scene sceneID="gVr-Nw-4Cf">
@@ -108,7 +110,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxd-OG-uod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625.625" y="-711.46666666666658"/>
+            <point key="canvasLocation" x="2601" y="-640"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="CIt-HO-unn">
@@ -128,14 +130,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ACM-D1-dgg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Native Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACM-D1-dgg">
                                                     <rect key="frame" x="16" y="13" width="130" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="currencyLabel" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hfr-lx-Z7M" userLabel="currencyLabel">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="currencyLabel" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfr-lx-Z7M" userLabel="currencyLabel">
                                                     <rect key="frame" x="262" y="13" width="71" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <accessibility key="accessibilityConfiguration" identifier="currencyLabel">
@@ -166,7 +168,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vvR-9V-oq7">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Zone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvR-9V-oq7">
                                                     <rect key="frame" x="16" y="13" width="130" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -187,13 +189,13 @@
                     <navigationItem key="navigationItem" id="Vgn-dT-XzQ"/>
                     <connections>
                         <outlet property="currencyCell" destination="I7R-7R-6lV" id="bry-Mm-bDV"/>
-                        <segue destination="yCu-CY-6VG" kind="push" identifier="currencySegue" id="yaH-nW-0Zo"/>
-                        <segue destination="Vyx-dJ-Vz8" kind="push" identifier="timezoneSegue" id="xOk-6s-HR8"/>
+                        <segue destination="yCu-CY-6VG" kind="show" identifier="currencySegue" id="yaH-nW-0Zo"/>
+                        <segue destination="Vyx-dJ-Vz8" kind="show" identifier="timezoneSegue" id="xOk-6s-HR8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwQ-hA-GTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422.5" y="419.5"/>
+            <point key="canvasLocation" x="2276" y="377.36131934032989"/>
         </scene>
         <!--timezoneTable-->
         <scene sceneID="XxP-ma-eFC">
@@ -235,7 +237,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfW-VE-JZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1963.75" y="60.029999999999994"/>
+            <point key="canvasLocation" x="3142" y="54"/>
         </scene>
         <!--Settings-->
         <scene sceneID="hEp-aL-rEc">
@@ -254,7 +256,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Abi-TT-9BO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898.75" y="419.0983333333333"/>
+            <point key="canvasLocation" x="1438" y="377"/>
         </scene>
         <!--currencyTable-->
         <scene sceneID="Fgc-cl-t3x">
@@ -364,7 +366,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mOb-Me-1KB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1963.75" y="904.89666666666665"/>
+            <point key="canvasLocation" x="3142" y="814.00000000000011"/>
         </scene>
     </scenes>
 </document>
