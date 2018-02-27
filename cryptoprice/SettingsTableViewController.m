@@ -16,7 +16,7 @@
 @property (nonatomic) NSInteger currencyDefault;
 @property (nonatomic) NSInteger timezoneDefault;
 @property (strong, strong) PreferencesTableViewController *currency;
-//+ (NSString*)initWithCurrency:(PreferencesTableViewController *) currency;
+
 @property (weak, nonatomic) IBOutlet CustomTableViewCell *currencyCell;
 
 
@@ -58,13 +58,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    //NSString *currencyPref = [_currency getCellText];
     NSString *tokenString = [[NSUserDefaults standardUserDefaults] stringForKey:@"currencyPref"];
     self.currencyCell.currencyLabel.text = tokenString;
-    //self.currencyCell.currencyLabel.text = currencyPref;
-    NSLog(@"hello: %@", self.currencyCell.currencyLabel.text);
-    
-    
+
     return cell;
 }
 

@@ -27,7 +27,7 @@
     
     //Setting cryptoSubView Properties:
     self.cryptoSubViewWidth = 375;
-    self.cryptoSubViewHeight = 235;
+    self.cryptoSubViewHeight = 245;
  
     self.view = [[UIView alloc] init];
     UIView *gvcView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -77,7 +77,7 @@
 
 -(void)getData {
     
-    NSString *currencyPref = [[NSUserDefaults standardUserDefaults] stringForKey:@"currencyPref"];;
+    NSString *currencyPref = [[NSUserDefaults standardUserDefaults] stringForKey:@"currencyPref"];
     NSArray *tokenArray = [[NSUserDefaults standardUserDefaults] arrayForKey:@"SEL_CRYPTOS"];
     NSInteger selectedCryptoCount = tokenArray.count;
 
@@ -85,44 +85,17 @@
         NSString *currentCrypto = tokenArray[i];
         NSInteger firstNumber = (currentCrypto.length - 4);
         NSString *substringCrypto = [currentCrypto substringWithRange:NSMakeRange(firstNumber ,3)];
-        NSString *customURL = [NSString stringWithFormat:@"%@%@%@%@",
-                               @"https://min-api.cryptocompare.com/data/pricemultifull?fsyms=",
-                               substringCrypto,
-                               @"&tsyms=",
-                               currencyPref];
-        NSURL *coinListURL = [NSURL URLWithString:customURL];
-        NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
-                                              dataTaskWithURL:coinListURL
-                                              completionHandler:^(NSData *data,
-                                                                  NSURLResponse *response,
-                                                                  NSError *error) {
-            
-            dispatch_async(dispatch_get_main_queue(), ^{  //ASYNCRHONOUS
-                NSDictionary *coinDataJSON = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-                NSString *coinPrice = [[[[coinDataJSON objectForKey:@"DISPLAY"]
-                                         objectForKey:substringCrypto]
-                                        objectForKey:currencyPref]
-                                       objectForKey: @"PRICE"];
-                NSString *lastUpdate = [[[[coinDataJSON objectForKey:@"DISPLAY"]
-                                          objectForKey:substringCrypto]
-                                         objectForKey:currencyPref]
-                                        objectForKey: @"LASTUPDATE"];
-                NSString *change24Hr = [[[[coinDataJSON objectForKey:@"DISPLAY"]
-                                          objectForKey:substringCrypto]
-                                         objectForKey:currencyPref]
-                                        objectForKey: @"CHANGE24HOUR"];
-                
-                // Adding custom CryptoSubView to for each array item:
-                CryptoSubView *aSubView = [[CryptoSubView alloc]
-                                           initWithFrame:CGRectMake(0,
-                                                                    (i*self.cryptoSubViewHeight),
-                                                                    self.view.bounds.size.width,
-                                                                    self.view.bounds.size.height)];
-                [aSubView setProperties:currentCrypto forPrice:coinPrice forLastUpdate:lastUpdate forChange:change24Hr];
-                [self.scrollView addSubview:aSubView];
-            });
-        }];
-        [downloadTask resume];
+
+        // Adding custom CryptoSubView to for each array item:
+        CryptoSubView *aSubView = [[CryptoSubView alloc]
+                                    initWithFrame:CGRectMake(0,
+                                                             (i*self.cryptoSubViewHeight),
+                                                             self.view.bounds.size.width,
+                                                             self.view.bounds.size.height)];
+ 
+        [aSubView setData:currentCrypto forURL:substringCrypto];
+        [self.scrollView addSubview:aSubView];
+
     }
     
     if (self.scrollView.subviews.count <= 3) {

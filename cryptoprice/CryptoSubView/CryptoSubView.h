@@ -18,6 +18,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *cryptoChange;
 @property (weak, nonatomic) IBOutlet UILabel *historicalPrice;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *historicalBar;
+@property (weak, nonatomic) NSString *cryptoAbbrevForHelper;
+-(IBAction)historicalBarBtnTapped:(id)sender;
+
+- (void)setData:(NSString *)cryptoName forURL:(NSString *)cryptoAbbrev;
 
 - (void)setProperties:(NSString*)name
              forPrice:(NSString*)price
